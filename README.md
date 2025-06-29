@@ -62,10 +62,19 @@ The `soil_db.csv` file includes:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/dharti-plus.git
+git clone https://github.com/KrithikaPadmashali/Dharti.git
 cd dharti-plus
-
-# 2. Set Up Python Environment
+```
+### 2. Set Up Python Environment
+```bash
 python -m venv venv
 source venv/bin/activate      # or venv\Scripts\activate on Windows
 pip install flask scikit-learn pandas flask-cors
+```
+### 3.Run the Flasj Backend
+```bash
+python app.py
+```
+### 4.Open the Frontend
+Open `index.html` in a browser(use VS code Live Server if needed)
+
