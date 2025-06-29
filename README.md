@@ -24,12 +24,12 @@ Dharti+ is a machine learning-powered web application that helps farmers determi
 ---
 
 ## 📂 Project Structure
-├── index.html # Frontend UI
-├── style.css # Styling
-├── script.js # Frontend JS logic
-├── app.py # Flask backend + ML model
-├── soil_db.csv # Training data for soil classification
-├── knn_implementation.ipynb # Notebook version for experimentation
+├── index.html # Frontend UI<br>
+├── style.css # Styling<br>
+├── script.js # Frontend JS logic<br>
+├── app.py # Flask backend + ML model<br>
+├── soil_db.csv # Training data for soil classification<br>
+├── knn_implementation.ipynb # Notebook version for experimentation<br>
 └── README.md # You're here!
 <br>
 
@@ -77,4 +77,10 @@ python app.py
 ```
 ### 4.Open the Frontend
 Open `index.html` in a browser(use VS code Live Server if needed)
+
+![image](https://github.com/user-attachments/assets/d9187584-175d-45a7-a1da-6159b90f852f)
+![image](https://github.com/user-attachments/assets/a05ed42f-5f70-4d62-9732-abee7339cfc0)
+
+![image](https://github.com/user-attachments/assets/8454df3c-c108-47cb-b3a1-7374d14c5620)
+
 
