@@ -383,3 +383,67 @@
    }
 
  }
+
+ .contact-section {
+   background: #fff;
+   color: #222;
+   padding: 48px 0 48px 0;
+   text-align: center;
+ }
+
+ .contact-title {
+   color: #ffb300;
+   font-family: 'Roboto Slab', serif;
+   font-size: 2rem;
+   font-weight: bold;
+   margin-bottom: 10px;
+ }
+
+ .contact-desc {
+   font-size: 1.1rem;
+   margin-bottom: 28px;
+ }
+
+ .contact-form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 18px;
+   max-width: 400px;
+   margin: 0 auto;
+ }
+
+ .contact-form input,
+ .contact-form textarea {
+   width: 100%;
+   padding: 12px;
+   border: 1.5px solid #ccc;
+   border-radius: 6px;
+   font-size: 1rem;
+   font-family: 'Roboto', Arial, sans-serif;
+   resize: none;
+   transition: border-color 0.2s;
+ }
+
+ .contact-form input:focus,
+ .contact-form textarea:focus {
+   border-color: #ffb300;
+   outline: none;
+ }
+
+ .contact-submit {
+   background: #ffb300;
+   color: #fff;
+   border: none;
+   border-radius: 24px;
+   padding: 12px 48px;
+   font-size: 1.2rem;
+   font-family: 'Roboto Slab', serif;
+   font-weight: 500;
+   cursor: pointer;
+   transition: background 0.2s;
+ }
+
+ .contact-submit:hover {
+   background: #ffa000;
+ }
