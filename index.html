@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dharti+</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <span class="logo">
+      <span class="logo-icon"></span>
+      Dharti+
+    </span>
+    <div class="nav-links">
+      <a href="#top" class="nav-link">Top</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#try" class="nav-link">Try IT</a>
+    </div>
+  </nav>
+  <section class="hero" id="top">
+    <div class="hero-content">
+      <div class="hero-title">
+        Empowering Indian<br>
+        Farmers with Soil<br>
+        Intelligence
+      </div>
+      <div class="hero-desc">
+        use our ML powered soil analysis tool to figure out the best suited crops for your farm, and maximize your
+        earnings.
+        <!-- </div>
+      <button class="try-btn">Try it out</button>
+    </div> -->
+  </section>
+  <footer class="footer">
+    India’s farmers feed the nation. <br>It’s time we feed them knowledge.
+  </footer>
+
+
+  <section class="about-section" id=about>
+    <div class="about-content">
+      <div class="about-text">
+        <div class="about-heading">ABOUT</div>
+        <div class="about-title">How do we determine the soil type?</div>
+        <div class="about-body">
+          Scientifically, there are 12 types of soil textures as shown in the given figure. Each of these textures
+          possess certain chemical and airable properties that are good for certain types of vegetation.<br><br>
+          When it comes to farming, some crops are sometimes harmful for the soil in the long term or have poor yields
+          in specific soil textures. We observed this problem, did our own research, and created a "dictionary" of
+          different soil types, and which crops are best suited for that type.<br><br>
+          This website asks the user to take 10 random samples from their farm and provide us with an estimated diameter
+          in mm of a random soil particulate from these samples. This data is then processed through our ML algorithm
+          which determines the soil type for the farmer and recommends suitable crops! Thus improving agricultural
+          efficiency and helping the farmer maximize their yield.
+        </div>
+      </div>
+      <div class="about-image">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/SoilTexture_USDA.svg/1024px-SoilTexture_USDA.svg.png"
+          alt="Soil Texture Triangle" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
+      </div>
+    </div>
+  </section>
+
+  <section class="why-section">
+    <div class="why-title">Why Dharti+?</div>
+    <div class="why-grid">
+      <div class="why-card">
+        <img src="https://i.pinimg.com/736x/14/b8/47/14b847fd234e5babbffb59696bd7fa32.jpg" alt="Field" class="why-img">
+        <div class="why-text">
+          Save Resources:<br>
+          Maximize yield without expanding land use
+        </div>
+      </div>
+      <div class="why-card">
+        <img src="https://i.pinimg.com/736x/25/4f/f1/254ff1db7128864fe8f4da0993bd23c2.jpg" alt="Tree" class="why-img">
+        <div class="why-text">
+          Earn More: Plant crops that thrive in your soil
+        </div>
+      </div>
+      <div class="why-card">
+        <img src="https://i.pinimg.com/736x/fe/5c/23/fe5c2327c69e9f3462844b909820385d.jpg" alt="Farm" class="why-img">
+        <div class="why-text">
+          Easy to use: No lab tests. Just simple measurements and instant result
+        </div>
+      </div>
+      <div class="why-card">
+        <img src="https://i.pinimg.com/736x/3c/05/43/3c05436715eacc38292a898bddbd57ac.jpg" alt="Indian Farm"
+          class="why-img">
+        <div class="why-text">
+          Built for you: Designed for Indian farmers and the unique soil of our land
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="try-section" id="try">
+    <div class="try-title">Try it</div>
+    <div class="try-desc">
+      Enter the diameter (in mm.) of 10 random soil particle samples from your farm, and get the recommended crops along
+      with the category in which the soil in your farm belongs to below:
+    </div>
+    <form class="try-form">
+      <div class="try-inputs">
+        <label>Sample1: <input type="number" step="any" name="sample1" required></label>
+        <label>Sample2: <input type="number" step="any" name="sample2" required></label>
+        <label>Sample3: <input type="number" step="any" name="sample3" required></label>
+        <label>Sample4: <input type="number" step="any" name="sample4" required></label>
+        <label>Sample5: <input type="number" step="any" name="sample5" required></label>
+        <label>Sample6: <input type="number" step="any" name="sample6" required></label>
+        <label>Sample7: <input type="number" step="any" name="sample7" required></label>
+        <label>Sample8: <input type="number" step="any" name="sample8" required></label>
+        <label>Sample9: <input type="number" step="any" name="sample9" required></label>
+        <label>Sample10: <input type="number" step="any" name="sample10" required></label>
+      </div>
+      <button type="submit" class="try-submit">Submit</button>
+    </form>
+  </section>
+
+
+</body>
+
+</html>
