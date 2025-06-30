@@ -4,17 +4,17 @@ document.addEventListener('DOMContentLoaded', function () {
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
 
-    // 1. Collect the 10 diameter values
+    // 1. Collecting the 10 diameter values
     const inputs = form.querySelectorAll('input[type="number"]');
     const diameters = Array.from(inputs).map(input => parseFloat(input.value));
 
-    // 2. Check if we have exactly 10 values
+    // 2. Checking if we have exactly 10 values
     if (diameters.length !== 10 || diameters.some(isNaN)) {
       alert("Please enter valid numbers for all 10 samples.");
       return;
     }
 
-    // 3. Send POST request to Flask backend
+    // 3. Sending POST request to Flask backend
     try {
       const response = await fetch('http://127.0.0.1:5000/predict', {
         method: 'POST',
@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const result = await response.json();
 
-      // 4. Handle errors from server
+      // 4. Handling errors from server
       if (result.error) {
         alert("Error: " + result.error);
         return;
       }
 
-      // 5. Create result display
+      // 5. Creating result display
       const resultDiv = document.createElement('div');
       resultDiv.innerHTML = `
         <h3>Result:</h3>
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
       resultDiv.style.marginTop = '30px';
       resultDiv.style.color = '#2d572c';
 
-      // 6. Replace form with result + thank you message
+      // 6. Replacing form with result + thank you message
       form.style.display = 'none';
       const thankYou = document.createElement('div');
       thankYou.textContent = 'Thanks for submitting!';
